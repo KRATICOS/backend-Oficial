@@ -30,7 +30,6 @@ const UsuarioSchema = new mongoose.Schema(
             enum: ['superadmin', 'admin', 'user'],
             default: 'user'
         },
-        /* ►► NUEVOS CAMPOS ◄◄ */
         matricula: {
             type: String,
             required: function () {

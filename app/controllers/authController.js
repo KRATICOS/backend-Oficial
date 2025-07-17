@@ -39,7 +39,7 @@ exports.registerAdmin = async (req, res) => {
       email,
       password,
       tel,
-      rol: 'admin' || 'user'
+      rol: 'admin' 
     });
 
     await nuevoAdmin.save();

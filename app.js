@@ -25,7 +25,7 @@ const allowedOrigins = [
 
 
 const corsOptions = {
-  /*
+  
   origin: function (origin, callback) {
     console.log('CORS Origin:', origin);
     if (!origin || allowedOrigins.includes(origin)) {
@@ -33,7 +33,7 @@ const corsOptions = {
     } else {
       callback(new Error('No permitido por CORS: ' + origin));
     }
-  },*/
+  },
 
   
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -59,15 +59,14 @@ const itemsRoutes = require('./app/routes/items');
 const historialRoutes = require('./app/routes/historialRoutes');
 const inventarioRoutes = require('./app/routes/inventarioRoutes');
 const uploadRoutes = require('./app/routes/uploadRoutes');
-const rutasProtegidas = require('./app/routes/guardRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/items', itemsRoutes);
 app.use('/api/inventario', inventarioRoutes);
 app.use('/api/historial', historialRoutes);
-app.use('/api/uploads', uploadRoutes);
-app.use('/api', rutasProtegidas);
+app.use('/api', uploadRoutes);
+
 
 app.get('/', (req, res) => {
   res.json({ message: 'API de Meterials-Dispenser funcionando correctamente.' });
