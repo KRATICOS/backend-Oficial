@@ -23,7 +23,9 @@ const allowedOrigins = [
   'http://frontend-oficial-bszdjnuhp-emmanuels-projects-ad5ae683.vercel.app',
   'https://frontend-oficial-ggb8v5l92-emmanuels-projects-ad5ae683.vercel.app',
   'https://frontend-oficial-7uakbajeg-emmanuels-projects-ad5ae683.vercel.app',
-  'https://frontend-oficial-mwssut7pz-emmanuels-projects-ad5ae683.vercel.app'
+  'https://frontend-oficial-mwssut7pz-emmanuels-projects-ad5ae683.vercel.app',
+  'https://frontend-oficial-7utelnj9i-emmanuels-projects-ad5ae683.vercel.app/',
+  'https://frontend-oficial-7utelnj9i-emmanuels-projects-ad5ae683.vercel.app'
 ];
 
 
